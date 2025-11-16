@@ -222,7 +222,7 @@ async function helpCommand(sock, chatId, message) {
 ║ ➤ .repo
 ╚═══════════════════╝
 
-Join our channel for updates:`;
+:`;
 
     try {
         const imagePath = path.join(__dirname, '../assets/bot_image2.jpg');
@@ -235,7 +235,7 @@ Join our channel for updates:`;
                 caption: helpMessage,
                 contextInfo: {
                     forwardingScore: 1,
-                    isForwarded: true,
+                    isForwarded: false,
                     forwardedNewsletterMessageInfo: {
                         newsletterJid: '120363161513685998@newsletter',
                         newsletterName: 'nobiBot MD',
@@ -249,7 +249,7 @@ Join our channel for updates:`;
                 text: helpMessage,
                 contextInfo: {
                     forwardingScore: 1,
-                    isForwarded: true,
+                    isForwarded: false,
                     forwardedNewsletterMessageInfo: {
                         newsletterJid: '120363161513685998@newsletter',
                         newsletterName: 'nobiBot MD by ɳσႦιƚα',
