@@ -10,7 +10,7 @@ This is a WhatsApp bot built using the Baileys library for group management, inc
 
 <div align="center"> 
   <a href="https://www.instagram.com/nobi._.459?igsh=NWx1M2JpYnVtbXZ4"> 
-    <img src="https://github.com/nobi-2/nobikbot-MD/blob/main/assets/bot_image2.jpg" alt="Knight Bot" height="300"> 
+    <img src="https://github.com/nobi-2/nobik-MD/blob/main/assets/bot_image2.jpg" alt="Knight Bot" height="300"> 
   </a> 
 </div>
 
