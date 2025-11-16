@@ -14,7 +14,7 @@ async function takeCommand(sock, chatId, message, args) {
         }
 
         // Get the packname from args or use default
-        const packname = args.join(' ') || 'Knight Bot';
+        const packname = args.join(' ') || 'ɳσႦιƚα';
 
         try {
             // Download the sticker
@@ -45,7 +45,7 @@ async function takeCommand(sock, chatId, message, args) {
             const json = {
                 'sticker-pack-id': crypto.randomBytes(32).toString('hex'),
                 'sticker-pack-name': packname,
-                'emojis': ['🤖']
+                'emojis': ['🐈‍⬛']
             };
 
             // Create exif buffer
