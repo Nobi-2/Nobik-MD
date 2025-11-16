@@ -8,13 +8,13 @@ async function banCommand(sock, chatId, message) {
     const isGroup = chatId.endsWith('@g.us');
     if (isGroup) {
         const senderId = message.key.participant || message.key.remoteJid;
-        const { isSenderAdmin, isBotAdmin } = await isAdmin(sock, chatId, senderId);
+        const { isSenderSudo, isBotAdmin } = await isSudo(sock, chatId, senderId);
         if (!isBotAdmin) {
             await sock.sendMessage(chatId, { text: 'Please make the bot an admin to use .ban', ...channelInfo }, { quoted: message });
             return;
         }
-        if (!isSenderAdmin && !message.key.fromMe) {
-            await sock.sendMessage(chatId, { text: 'Only group admins can use .ban', ...channelInfo }, { quoted: message });
+        if (!isSenderSudo && !message.key.fromMe) {
+            await sock.sendMessage(chatId, { text: 'Only sudo can use .ban', ...channelInfo }, { quoted: message });
             return;
         }
     } else {
